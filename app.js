@@ -1,5 +1,10 @@
+/**
+ * http://truffleframework.com/docs/advanced/build_processes
+ */
+
 var ProofOfExistence1 = artifacts.require("./ProofOfExistence1.sol");
 var test = artifacts.require("./test.sol");
+var utils = require('./utils')(web3);
 var rs = require('fs');
 
 module.exports = function() {
@@ -14,5 +19,7 @@ module.exports = function() {
 
         console.log(contracts.ProofOfExistence1.address);
         console.log(contracts.test.address);
+
+        utils.checkAllBalances();
     });
 };
