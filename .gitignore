@@ -1,5 +1,6 @@
 # Custom
 .ethereum_private/
+.ethereum_private-*
 build/
 
 # Logs
