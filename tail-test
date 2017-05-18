@@ -1,0 +1,20 @@
+Error [05-18|11:20:09] Starting P2P Error
+eRROR [05-18|11:20:09] Starting P2P eRROR
+ERROR [05-18|11:20:09] Starting P2P ERROR
+INFO [05-18|11:20:09] Starting P2P INFO
+WarN [05-18|11:20:09] Starting P2P WarN
+WARN [05-18|11:20:09] Starting P2P WARN
+
+INFO [05-18|11:20:09] Loaded most recent local full block      number=0 hash=d4e567…cb8fa3 td=17179869184
+INFO [05-18|11:20:09] Loaded most recent local fast block      number=0 hash=d4e567…cb8fa3 td=17179869184
+INFO [05-18|11:20:09] Starting P2P networking 
+INFO [05-18|11:20:11] RLPx listener up                         self=enode://0aad1c4e232d0ca6933eed9ab14e4cd83a038c7be4e68a539a1eae761dfdbd5359c084fc426badbd34f6987ac882195da74d09f17a5c33e896e9aae180e2a2a5@[::]:30303
+INFO [05-18|11:20:11] IPC endpoint opened: /Users/thiagoh/Library/Ethereum/geth.ipc 
+INFO [05-18|11:21:17] New wallet appeared                      url=keystore:///Users/thiagoh/dev/b… status=Locked
+INFO [05-18|11:25:45] Got interrupt, shutting down... 
+INFO [05-18|11:25:45] IPC endpoint closed: /Users/thiagoh/Library/Ethereum/geth.ipc 
+INFO [05-18|11:25:45] Blockchain manager stopped 
+INFO [05-18|11:25:45] Stopping Ethereum protocol 
+INFO [05-18|11:25:45] Ethereum protocol stopped 
+INFO [05-18|11:25:45] Transaction pool stopped 
+INFO [05-18|11:25:45] Database closed                          database=/Users/thiagoh/dev/blockchain/solidity-experiments/.ethereum_private/geth/chaindata
