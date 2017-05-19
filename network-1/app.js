@@ -2,14 +2,17 @@
  * http://truffleframework.com/docs/advanced/build_processes
  */
 
-var ProofOfExistence1 = artifacts.require("./ProofOfExistence1.sol");
+// var ProofOfExistence1 = artifacts.require("./ProofOfExistence1.sol");
 var test = artifacts.require("./test.sol");
-var utils = require('./utils')(web3);
+var utils = require('../common-lib/utils')(web3);
 var rs = require('fs');
 
 module.exports = function() {
 
-    var all = Promise.all([ProofOfExistence1.deployed(), test.deployed()]);
+    var all = Promise.all([new Promise(function(resolve, reject) {
+        resolve({ address: 'empty' });
+    }), test.deployed()]);
+    // var all = Promise.all([ProofOfExistence1.deployed(), test.deployed()]);
 
     all.then(function(arr) {
         console.log(arr.length + ' contract(s)');
