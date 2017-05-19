@@ -8,17 +8,20 @@ echo $datadir
 rm -rf $datadir
 mkdir $datadir
 
+  # --rpc \
   # --ipcpath ~/Library/Ethereum/geth.ipc \
-
 geth --fast --cache 512 \
+  --rpccorsdomain "*" \
   --nodiscover \
   --networkid $port \
   --port $port \
   --datadir $datadir \
   2>>$datadir/geth.log init genesis-$networkid.json
   
+  # --rpc \
   # --ipcpath ~/Library/Ethereum/geth.ipc \
 nohup geth --fast --cache 512 \
+  --rpccorsdomain "*" \
   --nodiscover \
   --networkid $port \
   --port $port \
